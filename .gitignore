@@ -1,0 +1,10 @@
+.idea/
+sandbox/
+teal-sourcemap-decoder/
+node_modules/
+package.json
+package-lock.json
+*.mjs
+*.teal.tok
+*.teal.tok.map
+*_annotated.teal

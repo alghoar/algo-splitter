@@ -1,0 +1,58 @@
+{
+  "name": "Splitter",
+  "desc": "Split payments to multiple receivers",
+  "methods": [
+    {
+      "name": "init",
+      "desc": "Handle app creation",
+      "args": [
+        { "type": "address[]", "name": "addresses" },
+        { "type": "uint64", "name": "asset" },
+        { "type": "address", "name": "closeAddress" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "optIntoAsset",
+      "desc": "Opt Into the asset that will have its balance split",
+      "args": [
+        { "type": "asset", "name": "asset" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "split",
+      "desc": "Split what wasn't split yet",
+      "args": [
+        { "type": "asset", "name": "asset" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "withdrawOne",
+      "desc": "Withdraw the split part of one account",
+      "args": [
+        { "type": "account", "name": "account" },
+        { "type": "asset", "name": "asset" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "authorizeDeletion",
+      "desc": "Authorize the deletion of the app",
+      "args": [
+        { "type": "bool", "name": "authorize" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "remove",
+      "desc": "Handle app deletion",
+      "args": [
+        { "type": "asset", "name": "asset" },
+        { "type": "account", "name": "closeAccount" }
+      ],
+      "returns": { "type": "void" }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "algo_splitter",
+  "version" : "0.1.4-testnet",
+  "stateful_contracts" : [
+    {
+      "name" : "AlgoSplitter",
+      "approval_program" : "algo_splitter__approval.teal",
+      "clear_state_program" : "algo_splitter__clear_state.teal",
+      "global-byteslices" : 13,
+      "global-ints" : 4,
+      "local-byteslices" : 0,
+      "local-ints" : 0,
+      "extra-pages" : 0
+    },
+  ]
+}
